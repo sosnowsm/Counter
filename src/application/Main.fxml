@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="150.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" percentHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="40.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="add10btn1" mnemonicParsing="false" onAction="#add10p1" prefWidth="40.0" text="+10">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="add20btn1" mnemonicParsing="false" onAction="#add20p1" prefWidth="40.0" text="+20">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="add50btn1" mnemonicParsing="false" onAction="#add50p1" prefWidth="40.0" text="+50">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="add100btn1" mnemonicParsing="false" onAction="#add100p1" prefWidth="50.0" text="+100">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#sub10p1" prefWidth="40.0" text="-10" />
+                              <Button mnemonicParsing="false" onAction="#sub20p1" prefWidth="40.0" text="-20" />
+                              <Button mnemonicParsing="false" onAction="#sub50p1" prefWidth="40.0" text="-50" />
+                              <Button mnemonicParsing="false" onAction="#sub100p1" prefWidth="50.0" text="-100" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#add10p2" prefWidth="40.0" text="+10" />
+                              <Button mnemonicParsing="false" onAction="#add20p2" prefWidth="40.0" text="+20" />
+                              <Button mnemonicParsing="false" onAction="#add50p2" prefWidth="40.0" text="+50" />
+                              <Button mnemonicParsing="false" onAction="#add100p2" prefWidth="50.0" text="+100" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#sub10p2" prefWidth="40.0" text="-10" />
+                              <Button mnemonicParsing="false" onAction="#sub20p2" prefWidth="40.0" text="-20" />
+                              <Button mnemonicParsing="false" onAction="#sub50p2" prefWidth="40.0" text="-50" />
+                              <Button mnemonicParsing="false" onAction="#sub100p2" prefWidth="50.0" text="-100" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#add10p3" prefWidth="40.0" text="+10" />
+                              <Button mnemonicParsing="false" onAction="#add20p3" prefWidth="40.0" text="+20" />
+                              <Button mnemonicParsing="false" onAction="#add50p3" prefWidth="40.0" text="+50" />
+                              <Button mnemonicParsing="false" onAction="#add100p3" prefWidth="50.0" text="+100" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#sub10p3" prefWidth="40.0" text="-10" />
+                              <Button mnemonicParsing="false" onAction="#sub20p3" prefWidth="40.0" text="-20" />
+                              <Button mnemonicParsing="false" onAction="#sub50p3" prefWidth="40.0" text="-50" />
+                              <Button mnemonicParsing="false" onAction="#sub100p3" prefWidth="50.0" text="-100" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#add10p4" prefWidth="40.0" text="+10" />
+                              <Button mnemonicParsing="false" onAction="#add20p4" prefWidth="40.0" text="+20" />
+                              <Button mnemonicParsing="false" onAction="#add50p4" prefWidth="40.0" text="+50" />
+                              <Button mnemonicParsing="false" onAction="#add100p4" prefWidth="50.0" text="+100" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#sub10p4" prefWidth="40.0" text="-10" />
+                              <Button mnemonicParsing="false" onAction="#sub20p4" prefWidth="40.0" text="-20" />
+                              <Button mnemonicParsing="false" onAction="#sub50p4" prefWidth="40.0" text="-50" />
+                              <Button mnemonicParsing="false" onAction="#sub100p4" prefWidth="50.0" text="-100" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox GridPane.rowIndex="2">
+                     <children>
+                        <Label text="Points">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="score1" mnemonicParsing="false" prefWidth="100.0" text="0">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Label text="Points">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="score2" mnemonicParsing="false" prefWidth="100.0" text="0">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <Label text="Points">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="score3" mnemonicParsing="false" prefWidth="100.0" text="0">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <children>
+                        <Label text="Points">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="score4" mnemonicParsing="false" prefWidth="100.0" text="0">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <TextField />
+                  <TextField GridPane.columnIndex="1" />
+                  <TextField GridPane.columnIndex="2" />
+                  <TextField GridPane.columnIndex="3" />
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
